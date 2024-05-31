@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Add Nums</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script type="text/javascript">
+		function addnums(){
+			var x=parseInt(document.getElementById('num1').value);
+			var y=parseInt(document.getElementById('num2').value);
+			var z=x+y
+			document.getElementById('num3').value=z
+			document.getElementById('res').textContent=z;
+			// document.getElentByID('res').innerHTML="<strog>"+z+</strong>;
+			
+			
+		}
+	</script>
+</head>
+<body>
+  <!-- document object model -dom-->
+  <main>
+  	<h2>Add Two Numbers</h2>
+  	<div class="card tcenter">
+  	<input type="number" id="num1" min="0" max="100000"value="0"class="w50"oninput="addnums()">
+  	<input type="number" id="num2" min="0" max="100000"value="0"class="w50"oninput="addnums()">
+  	<h1>=</h1>
+  	<input type="number" id="num3" value="0" readonly class="w50">
+  	<p class="tcenter">Sum is <span id="res">0</span></p>
+  		
+  		
+  	</div>
+  </main>
+</body>
+</html>
